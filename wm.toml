@@ -1,0 +1,2 @@
+root = "~/.wm/logs"
+editor = "/bin/nano"
