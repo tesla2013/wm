@@ -211,10 +211,6 @@ editor = "notepad"`)
 	if err != nil {
 		log.Fatalln("failed to open working memory file using", cfg.Editor, ":", err)
 	}
-	err = cmd.Wait()
-	if err != nil {
-		log.Fatalln(err)
-	}
 	os.Exit(0)
 
 }
