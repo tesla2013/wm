@@ -105,18 +105,22 @@ Configuration is done using a TOML file with the following recoginzed keys.
 The configuration file is stored next to the executable file itself by default
 but can be changed by providing a WMCFG environment variable.
 
+Provide "search" space separated terms to search the working memory database for.
+A table of results that includes all hits will be provided ordered by date.
+
 Usage:
   wm [<date>]
   wm -c | --config
   wm -h | --help
   wm --version
+  wm search <term>...
 
 Options:
   -c --config   Configure WM
   -h --help     Display this screen
   --version     Display the current version`
 
-	opts, err := docopt.ParseArgs(usage, nil, "0.1.0")
+	opts, err := docopt.ParseArgs(usage, nil, "0.2.0")
 	if err != nil {
 		log.Fatalln("could not parse arguments:", err)
 	}
