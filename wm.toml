@@ -1,2 +1,3 @@
-root = "~/.wm/logs"
-editor = "/bin/nano"
+root = "./test/testlog/"
+editor = "notepad"
+contextSize = 200
